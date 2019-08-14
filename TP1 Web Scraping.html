@@ -13,7 +13,6 @@
 <h1>
 		<div align="center">
 			<p style="color: #FA8072" >WEB Scraping Financiero</p>
-			<h1>. </h1>
 		</div>
 </h1>
 
@@ -22,16 +21,11 @@
 		<ul class="nav">
 			<li><a href="#temp1">Inicio</a></li>
 			<li><a href="#temp2">Acciones Lideres</a></li>					
-			<li><a href="#temp3">Las más valiosas</a></li>
-			<li><a href="#temp4">Las menos valiosasa</a></li>
+			<li><a href="#temp3">Grafico variaciones</a></li>
 		</ul>
 		</nav>
 	</div>
-	<section>
-	<div id="temp1"> 
-		<canvas class="my-4 w-100 chartjs-render-monitor" id="myChart" width="544" height="229" style="display: block; width: 544px; height: 229px;"></canvas>
-	</div>
-	</section>
+
 	<section>
 		<div id="temp2">
 			<form action="#" method="post" >
@@ -49,9 +43,9 @@
 			 </div>	
 			</fieldset>
 			</form>	
-		<div class="table-responsive-sm">
-			<table class="table table-hover">
-				<thead>
+			<div class="table-responsive-sm">
+				<table class="table table-hover">
+					<thead>
 						<tr>
 						<th scope="col">#</th>
 						<th scope="col">Especie</th>
@@ -63,8 +57,8 @@
 						<th scope="col">OTROS</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
+					<tbody>
+						<tr>
 						<th scope="row">1</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -73,8 +67,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">2</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -83,18 +77,18 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">3</th>
-						<td>Mark</td>
+						<td >Mark</td>
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>Mark</td>
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">4</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -103,8 +97,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">5</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -113,8 +107,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">6</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -123,8 +117,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">7</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -133,8 +127,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">8</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -143,8 +137,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">9</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -153,8 +147,8 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>
-					<tr>
+						</tr>
+						<tr>
 						<th scope="row">10</th>
 						<td>Mark</td>
 						<td>Otto</td>
@@ -163,24 +157,30 @@
 						<td>Otto</td>
 						<td>@mdo</td>
 						<td>@mdo</td>
-					</tr>					
-				</tbody>
-			</table>
-		</div>		
-			<a href="#"  class="btn btn-primary btn-sm" role="button">Volver</a>
-			<hr style="height:3px; color: black; background-color: black;" />
+						</tr>					
+					</tbody>
+				</table>
+			</div>		
+				<a href="#"  class="btn btn-primary btn-sm" role="button">Volver</a>
+				<hr style="height:3px; color: black; background-color: black;" />
 		</div>	
 		<div id="temp3">
-			<div align="center"><img src="perro2.jpg" > </br></div>	
+			<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+				<div id="plotlyChart"></div>
+					<script>
+						var data = [
+										{
+											x: ['javascript', 'python', '.net', 'ruwby','javwscript', 'pythonw', '.nwt', 'rubwy'],
+											y: [60, -24, 53, 16,60, -24, 53, 16],
+											type: 'bar'
+										}
+									];
+
+						Plotly.newPlot('plotlyChart', data);
+					</script>
 			
 			<a href="#"  class="btn btn-primary btn-sm" role="button">Volver</a>
-			<hr style="height:3px; color: black; background-color: black;" />
-		</div>
-		<div id="temp4">
-			<div align="center"><img src="perro2.jpg" > </br></div>	
 			
-			<a href="#"  class="btn btn-primary btn-sm" role="button">Volver</a>
-			<hr style="height:3px; color: black; background-color: black;" />
 		</div>
 		
 	</section>
